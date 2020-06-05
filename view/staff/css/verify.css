@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0em;
+}
+
+body {
+    background: #F39440;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+img {
+    width: 70px;
+    height: 69px;
+}
+
+.h3 {
+    font-family: Sansita One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+}
+
+.h2 {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#tickets, #message, #noTicket {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#message, #noTicket {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+.ticketInfo {
+    border: 2px solid #231F42;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 310px;
+    height: 70px;
+    padding-top: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    display: block;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: Fira Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: #090911;
+}
+
+.btn {
+    background: #231F42;
+    border-radius: 0px 0px 3px 3px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 310px;
+    height: 50px;
+}
+
+.snack-wrap {
+    display:block;
+    position:fixed;
+    bottom:0px;
+    left:10px;
+    padding:0px;
+}
+
+.snackbar {
+    display:block;
+    background:#231F42;
+    border:#f2f2f2;
+    padding:10px 40px 10px 20px;
+    color:#fff;
+    font-family:Arial;
+    position:relative;
+    left:0px;
+    bottom:-70px;
+    transition: bottom 0.5s ease-in-out;
+    z-index:9;
+} 
+.snackclose, label {
+    bottom:-70px;
+    position:absolute;
+    border:0;
+}
+.snackclose {
+    display:none;
+    z-index:10;
+}
+label {
+    z-index:11;
+    display:block;
+    width:100%;
+    height:100%;
+    color:rgba(255,255,255,0.8);
+    cursor:pointer;
+}
+.animated {
+    animation-name: snackbar-show;
+    animation-duration: 5s;
+    animation-direction: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay:1s;
+    animation-fill-mode: forwards;
+}
+.snackclose:checked~.snackbar, .snackclose:checked, .snackclose:checked+label {
+    animation-name: snackbar-hide;
+    animation-delay:0s;
+}
+@keyframes snackbar-show {
+    0%{ bottom:-70px; }
+    90%, 95% {bottom:15px; }
+    92.5%, 100% {bottom:10px; }
+} 
+@keyframes snackbar-hide {
+    0%, 7.5% {bottom:10px; }
+    5%,10% {bottom:15px; }
+    100% {bottom:-100px; }
+}

@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    min-height: 100vh;
+    background-color:#231F42 ;
+    padding: 100px 0;
+}
+
+h1 {
+    width: 311px;
+    height: 45px;
+    font-family: Sansita One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    margin: 10px auto;
+    color: #F56B9A;
+}
+
+#events {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 10px 20px;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 10%;
+    width: 64px;
+    height: 64px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: center;
+    left: 39px;
+    top: 183px;
+}
+
+h3 {
+    width: 202px;
+    height: 30px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px #F56B9A;
+}
+
+.where {
+    font-family: Fira Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+.time {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #D0D0D0;
+    margin: 0em;
+    padding: 0em;
+}
+
+.price {
+    width: 109px;
+    height: 27px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    color: #37AEAB;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+    
+}

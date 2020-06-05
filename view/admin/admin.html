@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where it's @</title>
+    <link rel="stylesheet" href="./css/admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-wrapper">
+        <nav>
+            <img src="../img/logo-colour.png" alt="logo-colour">
+        </nav>
+        <main id="adminEvents">
+            <section class="event">   
+                <table>
+                    <thead>
+                        <th>Name</th>
+                        <th>Where</th>
+                        <th>Amount</th>
+                        <th>Sold</th>
+                    </thead>   
+                    <tbody id="events">
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="addEvent">
+                <h2>Add event</h2>
+                <div class="input-event">
+                    <input type="text" id="inputName" placeholder="Name" class="addEventInput">
+                    <input type="text" id="inputWhere" placeholder="Where" class="addEventInput">
+                    <input type="text" id="inputDate" placeholder="Date" class="addEventInput" onfocus="(this.type='date')" onblur="(this.type='text')">
+                    <div class="ticketDetail">
+                        <input type="text" id="inputFrom" placeholder="From" class="addEventInput" onfocus="(this.type='time')" onblur="(this.type='text')">
+                        <input type="text" id="inputTo" placeholder="To" class="addEventInput" onfocus="(this.type='time')" onblur="(this.type='text')">
+                        <input type="number" id="inputTickets" placeholder="Tickets" class="addEventInput" min="1" max="9999">
+                        <input type="number" id="inputPrice" placeholder="Price" class="addEventInput" min="1" max="9999">
+                    </div>
+                    <button id="addEventButton">Add the event</button>
+                </div>
+        
+            </section>
+    </div>
+
+    <script src="./js/admin.js"></script>
+</body>
+</html>

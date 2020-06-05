@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0em;
+    padding: 0;
+}
+
+body {
+    background: #231F42;
+}
+
+img {
+    width: 60px;
+    height: 50px;
+    margin: 20px 0 0px 3%;
+}
+
+#adminEvents {
+    display: flex;
+    flex-direction: row;
+    margin: 70px 12%;
+}
+
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 550px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+}
+
+th {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #F56B9A;
+}
+
+.tblFields {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.tblNameField {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/**************ADD EVENT*****/
+#addEvent {
+    width: 350px;
+    height: 450px;
+    background: rgba(0, 0, 0, 0.3);
+    margin-left: 20px;
+}
+
+h2 {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    color: #F56B9A;
+    margin: 10px 5px;
+}
+
+.input-event {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 10px 5px;
+}
+.addEventInput {
+    margin-bottom: 10px;
+}
+
+#inputName, #inputWhere, #inputDate {
+    width: 330px;
+    height: 40px;
+} 
+
+#inputFrom, #inputTo, #inputPrice, #inputTickets {
+    width: 163px;
+    height: 40px;
+}
+
+#addEventButton {
+    background: #F56B9A;
+    border-radius: 3px;
+    width: 191px;
+    height: 40px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media (max-width:800px) {
+    #adminEvents {
+        display: flex;
+        flex-direction: column;
+        margin: 30px auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table {
+        width: 300px;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+}      

@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0em;
+}
+
+body {
+    background: #F39440;
+    width: 100%;
+    height: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.staff-wrapper {
+    min-height: 700px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 70px;
+    height: 69px;
+}
+
+.header {
+    margin-bottom: 65px;
+}
+
+.h3 {
+    font-family: Sansita One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+}
+
+.h2 {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+#username, #password {
+    border: 2px solid #231F42;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 310px;
+    height: 63px;
+    margin-bottom: 25px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #231F42;
+}
+
+#loginButton {
+    background: #231F42;
+    border-radius: 0px 0px 3px 3px;
+    width: 310px;
+    height: 63px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}

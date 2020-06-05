@@ -1,0 +1,76 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "title": "Lasse-Stefanz",
+      "date": "21 March",
+      "startTime": 19,
+      "finishTime": 21,
+      "where": "Kjell Hörnqvistafen",
+      "price": 350,
+      "ticket": "300",
+      "sold": 0
+    },
+    {
+      "id": "2",
+      "title": "Pelle trubadur",
+      "date": "29 March",
+      "startTime": 22,
+      "finishTime": "midnight",
+      "where": "Pubelipuben",
+      "price": 110,
+      "ticket": "100",
+      "sold": 0
+    },
+    {
+      "id": "3",
+      "title": "Kajsas Kör",
+      "date": "10 April",
+      "startTime": 15,
+      "finishTime": 16,
+      "where": "Götaplatsen",
+      "price": 99,
+      "ticket": "10000",
+      "sold": 0
+    },
+    {
+      "id": "4",
+      "title": "Klubb Untz",
+      "date": "17 April",
+      "startTime": 22,
+      "finishTime": "du tröttnar",
+      "where": "Din favotitkällare",
+      "price": 350,
+      "ticket": "120",
+      "sold": 0
+    },
+    {
+      "title": "sanazEvent",
+      "where": "Göteborg",
+      "date": "2020-06-22",
+      "startTime": "12:00",
+      "finishTime": "23:00",
+      "ticket": "40",
+      "price": "600",
+      "sold": 0,
+      "id": "5"
+    }
+  ],
+  "tickets": [
+
+  ],
+  "users": [
+    {
+      "uuid": "6caed861-ef19-44a2-92b0-f42801b6fec7",
+      "username": "sanaz",
+      "password": "$2b$10$QLMvIuP2AFK6bjwOwZhpc.cyNglBu0sQn1NjruA6rlhBrb/v4LEWi",
+      "role": "admin"
+    },
+    {
+      "uuid": "3584113f-3bbb-4949-b0ad-d5e7dfc821e1",
+      "username": "farshad",
+      "password": "$2b$10$cC4maIBChoQPnKU1zPWWMuBzar1ZhGLNXyvPmF5YLbsVAJw9LQToS",
+      "role": "staff"
+    }
+  ]
+}
