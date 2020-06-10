@@ -7,6 +7,30 @@ const inputTickets = document.querySelector('#inputTickets');
 const inputPrice = document.querySelector('#inputPrice');
 const addEventButton = document.querySelector('#addEventButton');
 
+function saveToken(token) {
+    sessionStorage.setItem('auth', token);
+}
+
+function getToken() {
+    return sessionStorage.getItem('auth');
+}
+
+async function loggedin() {
+    const token = getToken();
+    const url = 'http://localhost:4000/auth/loggedin';
+    const response = await fetch(url, {
+        method: 'GET',
+        headers: {
+            'Authorization': 'Bearer' + token
+        }
+    });
+    const data = await response.json();
+    if (!data.loggedIn) {
+        location.href = 'http://localhost:4000/staff/login.html';
+        sessionStorage.removeItem('auth');
+    }
+}
+
 
 function showAllEvents(events) {
     let eventList = document.querySelector('#events');
@@ -87,3 +111,5 @@ addEventButton.addEventListener('click', () => {
 });
 
 getAllEvents();
+loggedin();
+

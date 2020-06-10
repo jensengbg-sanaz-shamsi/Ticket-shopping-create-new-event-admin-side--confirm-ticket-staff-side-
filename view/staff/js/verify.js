@@ -2,6 +2,31 @@ const allTickets = document.getElementById('tickets');
 const elmMessage = document.getElementById('message');
 const elmMsg = document.getElementById('noTicket');
 
+
+function saveToken(token) {
+    sessionStorage.setItem('auth', token);
+}
+
+function getToken() {
+    return sessionStorage.getItem('auth');
+}
+//Send back user to loginpage if not logged in 
+async function loggedin() {
+    const token = getToken();
+    const url = 'http://localhost:4000/auth/loggedin';
+    const response = await fetch(url, {
+        method: 'GET',
+        headers: {
+            'Authorization': 'Bearer' + token
+        }
+    });
+    const data = await response.json();
+    if (!data.loggedIn) {
+        location.href = 'http://localhost:4000/staff/login.html';
+        sessionStorage.removeItem('auth');
+    }
+}
+
 async function getAllTickets() {
     try {
         const response = await fetch('http://localhost:4000/verify/getAllTickets', { method:('GET') });
@@ -66,3 +91,4 @@ async function confirmTicket() {
 }
 
 getAllTickets();
+loggedin();
